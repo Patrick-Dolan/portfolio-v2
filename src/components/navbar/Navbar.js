@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
+      <Container maxWidth="lg">
         <Toolbar disableGutters>
           <ComputerIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography

@@ -1,6 +1,5 @@
 import Navbar from "./navbar/Navbar"
-import { Grid, Typography } from "@mui/material"
-import { ThemeProvider } from "@mui/material";
+import { Grid, Typography, ThemeProvider, Container } from "@mui/material"
 import { theme } from "../Theme/index";
 
 function App() {
@@ -12,7 +11,9 @@ function App() {
         <Grid item>
         </Grid>
         <Grid item>
-          <Typography variant="h3" >App Component</Typography>
+          <Container maxWidth="lg">
+            <Typography variant="h3" >App Component</Typography>
+          </Container>
         </Grid>
       </Grid>
     </ThemeProvider>
