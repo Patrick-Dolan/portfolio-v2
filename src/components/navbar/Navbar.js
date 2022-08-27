@@ -118,6 +118,7 @@ const Navbar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Button 
             variant="contained" 
+            color="secondary"
             href="https://github.com/Patrick-Dolan" 
             target="_blank"
             startIcon={<GitHubIcon />}
