@@ -2,7 +2,7 @@ import Navbar from "./navbar/Navbar"
 import { Grid, Typography, ThemeProvider, Container } from "@mui/material"
 import { theme } from "../Theme/index";
 
-function App() {
+const App = () => {
   return (
     <>
     <ThemeProvider theme={theme}>
