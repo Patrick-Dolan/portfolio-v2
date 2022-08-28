@@ -2,6 +2,7 @@ import Navbar from "./navbar/Navbar"
 import { Box, ThemeProvider } from "@mui/material"
 import { theme } from "../Theme/index";
 import Banner from "./LandingPage/Banner";
+import Skills from "./page/Skills";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Box sx={{bgcolor: theme.palette.primary.main}}>
         <Banner />
       </Box>
+      <Skills />
     </ThemeProvider>
     </>
   );
