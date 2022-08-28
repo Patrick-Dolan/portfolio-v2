@@ -1,7 +1,7 @@
 import Navbar from "./navbar/Navbar"
 import { Box, ThemeProvider } from "@mui/material"
 import { theme } from "../Theme/index";
-import Banner from "./LandingPage/Banner";
+import Banner from "./page/Banner";
 import Skills from "./page/Skills";
 
 const App = () => {
