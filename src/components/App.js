@@ -1,21 +1,16 @@
 import Navbar from "./navbar/Navbar"
-import { Grid, Typography, ThemeProvider, Container } from "@mui/material"
+import { Box, ThemeProvider } from "@mui/material"
 import { theme } from "../Theme/index";
+import Banner from "./LandingPage/Banner";
 
 const App = () => {
   return (
     <>
     <ThemeProvider theme={theme}>
-      <Grid container>
-          <Navbar />
-        <Grid item>
-        </Grid>
-        <Grid item>
-          <Container maxWidth="lg">
-            <Typography variant="h3" >App Component</Typography>
-          </Container>
-        </Grid>
-      </Grid>
+      <Navbar />
+      <Box sx={{bgcolor: theme.palette.primary.main}}>
+        <Banner />
+      </Box>
     </ThemeProvider>
     </>
   );
