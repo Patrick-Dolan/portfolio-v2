@@ -1,5 +1,3 @@
-<!-- TODO Create Project board -->
-
 # _Portfolio_
 
 #### By _**Patrick Dolan**_
