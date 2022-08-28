@@ -14,7 +14,7 @@ const ProfileImg = () => {
         justifyContent: "center",
         width: "100%"
       }}>
-        <img style={style} alt="Patrick Dolan profile picture" src={profilePicture} />
+        <img style={style} alt="A headshot of Patrick Dolan" src={profilePicture} />
       </Box>
     </>
   )
