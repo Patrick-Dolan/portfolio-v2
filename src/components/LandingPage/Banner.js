@@ -22,10 +22,10 @@ const Banner = () => {
               py: "5em",
               my: "auto"
             }}>
-              <Typography variant="subtitle2">Hello, I'm</Typography>
-              <Typography variant="h3">Patrick Dolan</Typography>
-              <Typography variant="subtitle2">Frontend Web Developer</Typography>
-              <Typography variant="caption">Welcome to my portfolio. I love creating fun, user friendly, web applications that anyone can use.</Typography><br />
+              <Typography variant="subtitle2">Hello, my name is </Typography>
+              <Typography variant="h3">Patrick Dolan.</Typography>
+              <Typography variant="subtitle2">I'm a Frontend Web Developer</Typography>
+              <Typography variant="caption">Welcome to my portfolio. I'm a web developer who enjoys creating fun, user friendly, web applications that anyone can use.</Typography><br />
               {/* TODO Set button to go to contact form */}
               <Button 
               sx={{
