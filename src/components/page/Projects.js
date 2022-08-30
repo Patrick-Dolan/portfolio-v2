@@ -10,7 +10,7 @@ const Projects = () => {
 
   return(
     <>
-      <Container maxWidth="xl" sx={{color: theme.palette.primary.contrastText, py: "2em"}}>
+      <Container maxWidth="xl" sx={{color: theme.palette.primary.contrastText, py: "4em"}}>
         <Typography variant="h4" sx={{textAlign: "center", pt: "1em", pb: "1em"}}>Projects</Typography>
         <Grid container direction="row" justifyContent={"center"} spacing="16">
           <Grid item>
