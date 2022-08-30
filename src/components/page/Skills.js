@@ -14,7 +14,7 @@ const Skills = () => {
 
   return (
     <>
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" sx={{mb: "2em"}}>
         <Typography variant="h4" sx={{textAlign: "center", mt: "2em", mb: "1em"}}>Skills</Typography>
         <Grid container direction="row" justifyContent={"center"} spacing={6}>
           <Grid item>
