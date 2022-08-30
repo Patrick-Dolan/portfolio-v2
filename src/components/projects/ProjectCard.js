@@ -36,7 +36,7 @@ const ProjectCard = (props) => {
         </CardContent>
         <CardActions sx={{marginTop: "auto"}}>
           <Button 
-            variant="text" 
+            variant="outlined" 
             color="secondary" 
             size="small" 
             href={githubLink} 
@@ -51,7 +51,7 @@ const ProjectCard = (props) => {
               null 
             : 
               <Button 
-                variant="text" 
+                variant="outlined" 
                 color="secondary" 
                 size="small" 
                 href={liveLink} 
