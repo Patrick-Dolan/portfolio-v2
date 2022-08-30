@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Container, Grid, Typography } from "@mui/material";
 import aboutMeImg from "../../assets/ropes-course.jpg";
 
 // TODO Rewrite whole about me section to be more concise and direct
