@@ -15,7 +15,7 @@ const Banner = () => {
       alignItems: "stretch"
     }}>
       <Container maxWidth="xl" sx={{color: theme.palette.primary.contrastText}}>
-        <Grid container direction="row" alignItems="stretch">
+        <Grid container direction="row" display="flex" alignItems="center" justifyContent="center">
           <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
             <Box sx={{
               px: "5em",
@@ -43,7 +43,6 @@ const Banner = () => {
             <Box sx={{
               px: "2em",
               py: "2em",
-              my: "auto"
             }}>
               <ProfileImg />
             </Box>
