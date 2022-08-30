@@ -4,7 +4,6 @@ import { useTheme } from "@mui/material/styles";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ProjectCard from "../projects/ProjectCard";
 import * as projects from "../../projects-info";
-import GithubIcon from "../../assets/skills-icons/GithubIcon";
 
 const Projects = () => {
   const theme = useTheme();
