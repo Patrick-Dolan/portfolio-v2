@@ -4,6 +4,7 @@ import { theme } from "../Theme/index";
 import Banner from "./page/Banner";
 import Skills from "./page/Skills";
 import Projects from "./page/Projects";
+import AboutMe from "./page/AboutMe";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Box sx={{bgcolor: theme.palette.primary.main}}>
         <Projects />
       </Box>
+      <AboutMe />
     </ThemeProvider>
     </>
   );
