@@ -11,12 +11,14 @@ const ContactMe = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.REACT_APP_EMAILJS_EMAILSERVICEID, process.env.REACT_APP_EMAILJS_EMAILTEMPLATEID, e.target, "i5Dh_hfKCPGj9_jp4")
+    emailjs.sendForm(process.env.REACT_APP_EMAILJS_EMAILSERVICEID, process.env.REACT_APP_EMAILJS_EMAILTEMPLATEID, e.target, process.env.REACT_APP_EMAILJS_EMAILPUBLICKEY)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
+    
+      e.target.reset();
   };
   
   return (
@@ -61,6 +63,7 @@ const ContactMe = () => {
             variant="contained"
             color="secondary"
             endIcon={<SendIcon />}
+            type="submit"
           >
             Send message
           </Button>
