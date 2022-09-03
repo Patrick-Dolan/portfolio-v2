@@ -25,7 +25,7 @@ const Banner = () => {
               <Typography variant="subtitle2">Hello, my name is </Typography>
               <Typography variant="h3">Patrick Dolan.</Typography>
               <Typography variant="subtitle2">I'm a Jr. Frontend Web Developer</Typography>
-              <Typography variant="caption">I build things like this website out of code and math for the web. I spend most of my time programming, designing, and reading.</Typography><br />
+              <Typography variant="caption">I build websites and apps like this one out of code and math. I spend most of my time programming, designing, and reading.</Typography><br />
               {/* TODO Set button to go to contact form */}
               <Button 
               sx={{
