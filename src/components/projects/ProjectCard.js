@@ -5,7 +5,6 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 const ProjectCard = (props) => {
   const {title, description, githubLink, liveLink, imgLocation, imgAltText} = props.project;
 
-  console.log(imgLocation)
   return(
     <>
       <Card sx={{ 
