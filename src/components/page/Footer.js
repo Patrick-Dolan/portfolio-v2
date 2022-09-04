@@ -1,8 +1,8 @@
-import { Box, Button, Container, Divider, Grid, Link, Typography } from "@mui/material"
+import { Box, Container, Divider, Grid, Link, Typography } from "@mui/material"
 import DraftsIcon from '@mui/icons-material/Drafts';
-import LinkIcon from '@mui/icons-material/Link';
 import DescriptionIcon from '@mui/icons-material/Description';
 import { useTheme } from "@mui/material/styles";
+import SocialLinks from "../utilities/SocialLinks";
 
 const Footer = () => {
   const copyrightYear = new Date().getFullYear();
@@ -18,7 +18,7 @@ const Footer = () => {
             </Grid>
             <Grid item>
               <Typography variant="subtitle2">Email Me</Typography>
-              <Typography>dolanp1992@gmail.com</Typography>
+              <Typography variant="body2">dolanp1992@gmail.com</Typography>
             </Grid>
           </Grid>
         </Grid>
@@ -29,16 +29,13 @@ const Footer = () => {
             </Grid>
             <Grid item>
               <Typography variant="subtitle2">View Resume</Typography>
-              <Button 
-                variant="outlined" 
-                color="secondary" 
-                size="small"
+              <Link 
                 href="https://docs.google.com/document/d/1n6zcrTg9HeJRh8DTf6DAg1k1qkhxSH-wUlXKPTYXPLo/edit?usp=sharing"
                 target="_blank"
-                startIcon={<LinkIcon />}
+                color="secondary" 
               >
-                Resume
-              </Button>
+                <Typography variant="body2">Resume</Typography>
+              </Link>
             </Grid>
           </Grid>
         </Grid>
@@ -48,24 +45,24 @@ const Footer = () => {
         <Grid item md={6} sx={{mt: "2em"}}>
           {/* TODO setup links */}
           <Link href="#" underline="hover">
-            Skills
+            <Typography variant="caption">Skills</Typography>
           </Link>
           <br />
           <Link href="#" underline="hover">
-            Projects
+            <Typography variant="caption">Projects</Typography>
           </Link>
           <br />
           <Link href="#" underline="hover">
-            About Me
+            <Typography variant="caption">About Me</Typography>
           </Link>
           <br />
           <Link href="#" underline="hover">
-            Contact Me
+            <Typography variant="caption">Contact Me</Typography>
           <br />
           </Link>
         </Grid>
-        <Grid item md={6} textAlign="center">
-          <Typography>Social Links component here</Typography>
+        <Grid item md={6} textAlign="start">
+          <SocialLinks />
         </Grid>
       </Grid>
       <Box sx={{
