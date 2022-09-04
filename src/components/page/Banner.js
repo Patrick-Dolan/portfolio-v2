@@ -38,7 +38,8 @@ const Banner = () => {
               {/* TODO Set button to go to contact form */}
               <Button 
               sx={{
-                mt: "2em"
+                mt: "2em",
+                minWidth: "15em"
               }} 
               variant="contained"
               color="secondary"
@@ -49,7 +50,8 @@ const Banner = () => {
               <br />
               <Button 
               sx={{
-                mt: ".5em"
+                mt: ".5em",
+                minWidth: "15em"
               }} 
                 variant="contained"
                 color="secondary"
