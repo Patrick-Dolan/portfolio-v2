@@ -1,4 +1,5 @@
 import { Button, Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 
 const ProjectCard = (props) => {
@@ -42,6 +43,7 @@ const ProjectCard = (props) => {
             href={githubLink} 
             target="_blank" 
             sx={{mr: ".5em"}}
+            startIcon={<OpenInNewIcon />}
             >
               Source Code
             </Button>
