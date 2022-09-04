@@ -4,6 +4,7 @@ import { useTheme } from "@mui/material/styles"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import LinkIcon from '@mui/icons-material/Link';
 import ProfileImg from "../utilities/ProfileImg";
+import SocialLinks from "../utilities/SocialLinks";
 
 const Banner = () => {  
   const theme = useTheme();
@@ -17,10 +18,11 @@ const Banner = () => {
     }}>
       <Container maxWidth="md" sx={{color: theme.palette.primary.contrastText}}>
         <Grid container direction="row-reverse" display="flex" alignItems="center" justifyContent="center">
-          <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
+          <Grid item xs={12} sm={6} md={6} lg={6} xl={6} >
             <Box sx={{
               px: "2em",
               py: "2em",
+              alignText: "center"
             }}>
               <ProfileImg />
             </Box>
@@ -35,7 +37,6 @@ const Banner = () => {
               <Typography variant="h3">Patrick Dolan.</Typography>
               <Typography variant="subtitle2">I'm a Jr. Frontend Web Developer</Typography>
               <Typography variant="caption">I build websites like this one out of code and math. I spend most of my time programming, designing, and reading.</Typography><br />
-              {/* TODO Set button to go to contact form */}
               <Button 
               sx={{
                 mt: "2em",
@@ -61,6 +62,12 @@ const Banner = () => {
               >
                 Resume
               </Button>
+              <Box sx={{
+                mt: "1em"
+              }}
+              >
+                <SocialLinks secondaryColor="contrast" />
+              </Box>
             </Box>
           </Grid>
         </Grid>
