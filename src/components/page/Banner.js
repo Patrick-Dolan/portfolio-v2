@@ -16,12 +16,10 @@ const Banner = () => {
       width: "100%",
       alignItems: "stretch"
     }}>
-      <Container maxWidth="md" sx={{color: theme.palette.primary.contrastText}}>
+      <Container maxWidth="md" sx={{color: theme.palette.primary.contrastText, py: "4em"}}>
         <Grid container direction="row-reverse" display="flex" alignItems="center" justifyContent="center">
           <Grid item xs={12} sm={6} md={6} lg={6} xl={6} >
             <Box sx={{
-              px: "2em",
-              py: "2em",
               alignText: "center"
             }}>
               <ProfileImg />
