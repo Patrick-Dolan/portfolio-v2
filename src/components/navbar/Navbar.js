@@ -11,8 +11,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-
-const pages = ['Skills', 'Projects', 'About Me'];
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -77,11 +76,27 @@ const Navbar = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
+              <MenuItem key="Skills" onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">
+                  <HashLink style={{textDecoration: "none"}} to={`/Skills`}>
+                    Skills
+                  </HashLink>
+                </Typography>
+              </MenuItem>
+              <MenuItem key="Projects" onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">
+                  <HashLink style={{textDecoration: "none"}} to={`/$Projects`}>
+                    Projects
+                  </HashLink>
+                </Typography>
+              </MenuItem>
+              <MenuItem key="AboutMe" onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">
+                  <HashLink style={{textDecoration: "none"}} to={`/$AboutMe`}>
+                    AboutMe
+                  </HashLink>
+                </Typography>
+              </MenuItem>
             </Menu>
           </Box>
           <ComputerIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
@@ -104,15 +119,30 @@ const Navbar = () => {
             Patrick Dolan
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            <HashLink style={{textDecoration: "none"}} to={`#skills`}>
               <Button
-                key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                Skills
               </Button>
-            ))}
+            </HashLink>
+            <HashLink style={{textDecoration: "none"}} to={`#projects`}>
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+              >
+                Projects
+              </Button>
+            </HashLink>
+            <HashLink style={{textDecoration: "none"}} to={`#aboutme`}>
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+              >
+                About Me
+              </Button>
+            </HashLink>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
