@@ -13,7 +13,7 @@ const Skills = () => {
   let iconStyles = {height: "5em", mx: "center"}
 
   return (
-    <>
+    <div id="skills">
       <Container maxWidth="xl" sx={{py: "4em"}} >
         <Typography variant="h4" sx={{textAlign: "center", mb: "1em"}}>Skills</Typography>
         <Grid container direction="row" justifyContent={"center"} spacing={6}>
@@ -67,7 +67,7 @@ const Skills = () => {
           </Grid>
         </Grid>
       </Container>
-    </>
+    </div>
   )
 }
 

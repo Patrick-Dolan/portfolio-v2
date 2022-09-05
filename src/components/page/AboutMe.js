@@ -4,7 +4,7 @@ import aboutMeImg from "../../assets/ropes-course.jpg";
 // TODO Rewrite whole about me section to be more concise and direct
 const AboutMe = () => {
   return(
-    <>
+    <div id="aboutme">
       <Container maxWidth="xl" sx={{py: "4em"}}>
         <Grid container display="flex" alignItems="center" justifyContent="center" direction="row" spacing={10}>
           <Grid item>
@@ -20,7 +20,7 @@ const AboutMe = () => {
           </Grid>
         </Grid>
       </Container>
-    </>
+    </div>
   )
 }
 

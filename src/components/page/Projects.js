@@ -9,7 +9,7 @@ const Projects = () => {
   const theme = useTheme();
 
   return(
-    <>
+    <div id="projects">
       <Container maxWidth="xl" sx={{color: theme.palette.primary.contrastText, py: "4em"}}>
         <Box sx={{textAlign: "center", pb: "2em"}}>
           <Typography variant="h4">Projects</Typography>
@@ -41,7 +41,7 @@ const Projects = () => {
           </Button>
         </Box>
       </Container>
-    </>
+    </div>
   )
 }
 
