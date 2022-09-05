@@ -78,21 +78,21 @@ const Navbar = () => {
             >
               <MenuItem key="Skills" onClick={handleCloseNavMenu}>
                 <Typography textAlign="center">
-                  <HashLink style={{textDecoration: "none", color: "black"}} to={`/Skills`}>
+                  <HashLink smooth style={{textDecoration: "none", color: "black"}} to={`#skills`}>
                     Skills
                   </HashLink>
                 </Typography>
               </MenuItem>
               <MenuItem key="Projects" onClick={handleCloseNavMenu}>
                 <Typography textAlign="center">
-                  <HashLink style={{textDecoration: "none", color: "black"}} to={`/$Projects`}>
+                  <HashLink smooth style={{textDecoration: "none", color: "black"}} to={`#projects`}>
                     Projects
                   </HashLink>
                 </Typography>
               </MenuItem>
               <MenuItem key="AboutMe" onClick={handleCloseNavMenu}>
                 <Typography textAlign="center">
-                  <HashLink style={{textDecoration: "none", color: "black"}} to={`/$AboutMe`}>
+                  <HashLink smooth style={{textDecoration: "none", color: "black"}} to={`#aboutme`}>
                     AboutMe
                   </HashLink>
                 </Typography>
@@ -119,7 +119,7 @@ const Navbar = () => {
             Patrick Dolan
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            <HashLink style={{textDecoration: "none"}} to={`#skills`}>
+            <HashLink smooth style={{textDecoration: "none"}} to={`#skills`}>
               <Button
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
@@ -127,7 +127,7 @@ const Navbar = () => {
                 Skills
               </Button>
             </HashLink>
-            <HashLink style={{textDecoration: "none"}} to={`#projects`}>
+            <HashLink smooth style={{textDecoration: "none"}} to={`#projects`}>
               <Button
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
@@ -135,7 +135,7 @@ const Navbar = () => {
                 Projects
               </Button>
             </HashLink>
-            <HashLink style={{textDecoration: "none"}} to={`#aboutme`}>
+            <HashLink smooth style={{textDecoration: "none"}} to={`#aboutme`}>
               <Button
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
