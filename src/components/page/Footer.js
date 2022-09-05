@@ -63,6 +63,9 @@ const Footer = () => {
         </Grid>
         <Grid item md={6} textAlign="start" sx={{mt: "2em"}}>
           <SocialLinks />
+          <Typography variant="caption">
+            This site was built mostly with React and MaterialUI. For more information please feel free to checkout the projects <Link href="https://github.com/Patrick-Dolan/portfolio-v2" target="_blank">github repo</Link>.
+          </Typography>
         </Grid>
       </Grid>
       <Box sx={{
