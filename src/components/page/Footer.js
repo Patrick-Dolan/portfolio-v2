@@ -61,7 +61,7 @@ const Footer = () => {
           <br />
           </Link>
         </Grid>
-        <Grid item md={6} textAlign="start">
+        <Grid item md={6} textAlign="start" sx={{mt: "2em"}}>
           <SocialLinks />
         </Grid>
       </Grid>
