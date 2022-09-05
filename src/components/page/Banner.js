@@ -1,6 +1,7 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import { useTheme } from "@mui/material/styles"
+import { HashLink } from "react-router-hash-link";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import LinkIcon from '@mui/icons-material/Link';
 import ProfileImg from "../utilities/ProfileImg";
@@ -35,17 +36,19 @@ const Banner = () => {
               <Typography variant="h3">Patrick Dolan.</Typography>
               <Typography variant="subtitle2">I'm a Jr. Frontend Web Developer</Typography>
               <Typography variant="caption">I build websites like this one out of code and math. I spend most of my time programming, designing, and reading.</Typography><br />
-              <Button 
-              sx={{
-                mt: "2em",
-                minWidth: "15em"
-              }} 
-              variant="contained"
-              color="secondary"
-              endIcon={<ArrowForwardIcon />}
-              >
-                Contact Me
-              </Button>
+              <HashLink smooth style={{textDecoration: "none", color: theme.palette.primary.lightText}} to={`#contactme`}>
+                <Button 
+                sx={{
+                  mt: "2em",
+                  minWidth: "15em"
+                }} 
+                variant="contained"
+                color="secondary"
+                endIcon={<ArrowForwardIcon />}
+                >
+                  Contact Me
+                </Button>
+              </HashLink>
               <br />
               <Button 
               sx={{
