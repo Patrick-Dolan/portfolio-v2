@@ -3,6 +3,7 @@ import DraftsIcon from '@mui/icons-material/Drafts';
 import DescriptionIcon from '@mui/icons-material/Description';
 import { useTheme } from "@mui/material/styles";
 import SocialLinks from "../utilities/SocialLinks";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   const copyrightYear = new Date().getFullYear();
@@ -44,22 +45,22 @@ const Footer = () => {
       <Grid container justifyContent={"space-evenly"} textAlign={"start"} >
         <Grid item md={6} sx={{mt: "2em"}}>
           {/* TODO setup links */}
-          <Link href="#" underline="hover">
+          <HashLink style={{textDecoration: "none", color: theme.palette.primary.lightText}} to={`#skills`}>
             <Typography variant="caption">Skills</Typography>
-          </Link>
+          </HashLink>
           <br />
-          <Link href="#" underline="hover">
+          <HashLink style={{textDecoration: "none", color: theme.palette.primary.lightText}} to={`#projects`}>
             <Typography variant="caption">Projects</Typography>
-          </Link>
+            </HashLink>
           <br />
-          <Link href="#" underline="hover">
+          <HashLink style={{textDecoration: "none", color: theme.palette.primary.lightText}} to={`#aboutme`}>
             <Typography variant="caption">About Me</Typography>
-          </Link>
+            </HashLink>
           <br />
-          <Link href="#" underline="hover">
+          <HashLink style={{textDecoration: "none", color: theme.palette.primary.lightText}} to={`#contactme`}>
             <Typography variant="caption">Contact Me</Typography>
+          </HashLink>
           <br />
-          </Link>
         </Grid>
         <Grid item md={6} textAlign="start" sx={{mt: "2em"}}>
           <SocialLinks />
