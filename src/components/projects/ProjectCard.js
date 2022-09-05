@@ -1,9 +1,12 @@
 import { Button, Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
-
+import InfoIcon from '@mui/icons-material/Info';
+import { useState } from "react";
+import ProjectDialog from "../dialogs/ProjectDialog";
 
 const ProjectCard = (props) => {
   const {title, description, githubLink, liveLink, imgLocation, imgAltText} = props.project;
+  const [open, setOpen] = useState(false);
 
   return(
     <>
@@ -43,9 +46,24 @@ const ProjectCard = (props) => {
             target="_blank" 
             sx={{mr: ".5em"}}
             startIcon={<OpenInNewIcon />}
-            >
-              Source Code
-            </Button>
+          >
+            Source Code
+          </Button>
+          <Button 
+            variant="outlined" 
+            color="secondary" 
+            size="small" 
+            sx={{mr: ".5em"}}
+            startIcon={<InfoIcon />}
+            onClick={() => setOpen(true)}
+          >
+            Learn More
+          </Button>
+          <ProjectDialog
+            open={open}
+            setOpen={setOpen}
+            project={props.project}
+          />
           {/* Conditionally render liveLink if one is available */}
           {(liveLink == null) 
             ? 
