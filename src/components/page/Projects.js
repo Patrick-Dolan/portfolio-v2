@@ -11,9 +11,9 @@ const Projects = () => {
   return(
     <div id="projects">
       <Container maxWidth="xl" sx={{color: theme.palette.primary.contrastText, py: "4em"}}>
-        <Box sx={{textAlign: "center", pb: "2em"}}>
+        <Box sx={{textAlign: "center", mb: "2em"}}>
           <Typography variant="h4">Projects</Typography>
-          <Typography variant="subtitle">Here's a few of my favorite projects.</Typography>
+          <Typography variant="caption">These are some of my favorite projects and definitely the ones that have taught me the most about web development.</Typography>
         </Box>
         <Grid container direction="row" justifyContent={"center"} spacing="16">
           <Grid item>
