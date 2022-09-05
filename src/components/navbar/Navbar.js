@@ -78,21 +78,21 @@ const Navbar = () => {
             >
               <MenuItem key="Skills" onClick={handleCloseNavMenu}>
                 <Typography textAlign="center">
-                  <HashLink style={{textDecoration: "none"}} to={`/Skills`}>
+                  <HashLink style={{textDecoration: "none", color: "black"}} to={`/Skills`}>
                     Skills
                   </HashLink>
                 </Typography>
               </MenuItem>
               <MenuItem key="Projects" onClick={handleCloseNavMenu}>
                 <Typography textAlign="center">
-                  <HashLink style={{textDecoration: "none"}} to={`/$Projects`}>
+                  <HashLink style={{textDecoration: "none", color: "black"}} to={`/$Projects`}>
                     Projects
                   </HashLink>
                 </Typography>
               </MenuItem>
               <MenuItem key="AboutMe" onClick={handleCloseNavMenu}>
                 <Typography textAlign="center">
-                  <HashLink style={{textDecoration: "none"}} to={`/$AboutMe`}>
+                  <HashLink style={{textDecoration: "none", color: "black"}} to={`/$AboutMe`}>
                     AboutMe
                   </HashLink>
                 </Typography>
