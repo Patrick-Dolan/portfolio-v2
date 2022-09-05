@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { Alert, Button, Container, Paper, Snackbar, TextField, Typography } from "@mui/material";
+import { Alert, Box, Button, Container, Paper, Snackbar, TextField, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import SendIcon from '@mui/icons-material/Send';
 import emailjs from "emailjs-com";
@@ -56,14 +56,16 @@ const ContactMe = () => {
           py: "1em", 
           px: "1em"
         }}>
-          <Typography variant="h4" textAlign={"center"}>Contact Me</Typography>
+          <Box sx={{textAlign: "center"}}>
+            <Typography variant="h4" textAlign={"center"}>Contact Me</Typography>
+            <Typography variant="caption" sx={{color: theme.palette.primary.lightText}}>Feel free to contact me with this form, and I will reply as soon as possible.</Typography>
+          </Box>
           <form ref={form} onSubmit={sendEmail}>
             <TextField
               id="filled-name"
               label="Name"
               name="name"
               margin="normal"
-              
               fullWidth
               required
             />
