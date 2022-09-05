@@ -15,7 +15,10 @@ const Skills = () => {
   return (
     <div id="skills">
       <Container maxWidth="xl" sx={{py: "4em"}} >
-        <Typography variant="h4" sx={{textAlign: "center", mb: "1em"}}>Skills</Typography>
+        <Box sx={{textAlign: "center", mb: "2em"}}>
+          <Typography variant="h4">Skills</Typography>
+          <Typography variant="caption">Here are the essential skills and systems I work to master in order to build fun, interactive products. </Typography>
+        </Box>
         <Grid container direction="row" justifyContent={"center"} spacing={6}>
           <Grid item>
             <Box sx={boxSize}>
