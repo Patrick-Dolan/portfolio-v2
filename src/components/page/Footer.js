@@ -44,20 +44,19 @@ const Footer = () => {
       <Divider />
       <Grid container justifyContent={"space-evenly"} textAlign={"start"} >
         <Grid item md={6} sx={{mt: "2em"}}>
-          {/* TODO setup links */}
-          <HashLink style={{textDecoration: "none", color: theme.palette.primary.lightText}} to={`#skills`}>
+          <HashLink smooth style={{textDecoration: "none", color: theme.palette.primary.lightText}} to={`#skills`}>
             <Typography variant="caption">Skills</Typography>
           </HashLink>
           <br />
-          <HashLink style={{textDecoration: "none", color: theme.palette.primary.lightText}} to={`#projects`}>
+          <HashLink smooth style={{textDecoration: "none", color: theme.palette.primary.lightText}} to={`#projects`}>
             <Typography variant="caption">Projects</Typography>
             </HashLink>
           <br />
-          <HashLink style={{textDecoration: "none", color: theme.palette.primary.lightText}} to={`#aboutme`}>
+          <HashLink smooth style={{textDecoration: "none", color: theme.palette.primary.lightText}} to={`#aboutme`}>
             <Typography variant="caption">About Me</Typography>
             </HashLink>
           <br />
-          <HashLink style={{textDecoration: "none", color: theme.palette.primary.lightText}} to={`#contactme`}>
+          <HashLink smooth style={{textDecoration: "none", color: theme.palette.primary.lightText}} to={`#contactme`}>
             <Typography variant="caption">Contact Me</Typography>
           </HashLink>
           <br />
