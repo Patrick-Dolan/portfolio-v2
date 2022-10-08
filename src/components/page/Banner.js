@@ -34,7 +34,7 @@ const Banner = () => {
             }}>
               <Typography variant="subtitle2">Hello, my name is </Typography>
               <Typography variant="h3">Patrick Dolan.</Typography>
-              <Typography variant="subtitle2">I'm a Jr. Frontend Web Developer</Typography>
+              <Typography variant="subtitle2">I'm a Frontend Developer</Typography>
               <Typography variant="caption">I build websites like this one out of code and math. I spend most of my time programming, designing, and reading.</Typography><br />
               <HashLink smooth style={{textDecoration: "none", color: theme.palette.primary.lightText}} to={`#contactme`}>
                 <Button 
