@@ -1,9 +1,9 @@
-import profilePicture from "../../assets/ProfilePicture.jpg"
+import profilePicture from "../../assets/ProfilePictureV2.png"
 import { Box } from "@mui/material"
 
 const ProfileImg = () => {
   const style = {
-    maxWidth: "50%",
+    maxWidth: "90%",
     height: "100%",
   }
   
