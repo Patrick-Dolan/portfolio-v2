@@ -6,7 +6,7 @@
 
 ## Deployed Site
 
-{ADD LIVE LINK HERE}
+<a href="https://patrickdolan.dev/">Portfolio (LIVE)</a>
 
 ## Technologies Used
 
@@ -65,4 +65,4 @@ _dolanp1992@gmail.com_
 
 _MIT_
 
-Copyright (c) _2022_ _Patrick Dolan_
+Copyright (c) _2023_ _Patrick Dolan_
