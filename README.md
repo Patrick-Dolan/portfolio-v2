@@ -6,7 +6,7 @@
 
 ## Deployed Site
 
-{ADD LIVE LINK HERE}
+[Deployed Site](https://patrickdolan.dev/)
 
 ## Technologies Used
 
@@ -18,10 +18,6 @@
 ## Description
 
 _A portfolio website for myself. This site includes information on me and my coding projects as well as useful links to my social accounts._
-
-## Setup/Installation Requirements
-
-{ADD SETUP/INSTALLATION SETTINGS}
 
 ## Devlog
 
@@ -65,4 +61,4 @@ _dolanp1992@gmail.com_
 
 _MIT_
 
-Copyright (c) _2022_ _Patrick Dolan_
+Copyright (c) _2024_ _Patrick Dolan_
